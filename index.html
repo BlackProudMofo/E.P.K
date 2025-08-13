@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krexx Nv [Dossier]</title>
+    <meta name="description" content="An interactive dossier on the Nigerian Afro-fusion artist Krexx Nv.">
+    <meta name="theme-color" content="#0b0b0b">
 
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Krexx Nv [The Dossier]">
+    <meta property="og:description" content="Explore the blueprint of the Engineer-Poet.">
+    <meta property="og:image" content="https://krexxnv.com/images/kx32.jpeg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://krexxnv.com/images/kx32.jpeg">
+
+    <!-- Fonts & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --brand-cyan: #00e0e0;
+            --bg: #0b0b0b;
+            --surface: #121212;
+            --border: #242424;
+            --ink: #e5e5e5;
+            --muted: #a3a3a3;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .font-mono {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .pocket {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            transition: background-color 0.3s;
+        }
+        .pocket-title {
+            border-bottom: 1px solid var(--border);
+        }
+        .link-item {
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .link-item:hover {
+            background-color: var(--brand-cyan);
+            color: #0b0b0b;
+        }
+        .link-item:hover .link-icon {
+            color: #0b0b0b !important;
+        }
+        .tag {
+            background-color: rgba(0, 224, 224, 0.1);
+            color: var(--brand-cyan);
+            border: 1px solid rgba(0, 224, 224, 0.2);
+        }
+        /* Blinking cursor effect */
+        .cursor::after {
+            content: '_';
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto max-w-5xl p-4 md:p-8">
+
+        <!-- Header Pocket -->
+        <header class="pocket rounded-lg p-6 mb-6 flex flex-col md:flex-row items-center gap-6">
+            <img src="https://krexxnv.com/images/kx32.jpeg" alt="Krexx Nv" class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-neutral-800">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Krexx Nv</h1>
+                <p class="font-mono text-lg text-brand-cyan cursor">The Engineer-Poet</p>
+                <p class="text-neutral-400 mt-2">Status: Independent | Location: Lagos, NG</p>
+            </div>
+        </header>
+
+        <!-- Main Grid for Pockets -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Left Column -->
+            <div class="md:col-span-2 space-y-6">
+                
+                <!-- Blueprint Pocket (Bio) -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Blueprint // Profile</h2>
+                    <div class="p-6 space-y-4 text-neutral-300 leading-relaxed">
+                        <p><strong>Honest Ornan Okoawo</strong> (Krexx Nv) is a Nigerian Afro-fusion artist who operates as an engineer of sound and a poet of "Naija Reality." His work deconstructs themes of survival, resilience, and spiritual friction with analytical precision.</p>
+                        <p>Following a "digital death" that erased his early catalog, he rebuilt independently, founding <strong>Nimble Nova Entertainment</strong>. This act of "morphallaxis"—regeneration through reorganization—defines his current era of fierce creative control and unapologetic truth.</p>
+                    </div>
+                </div>
+
+                <!-- Sonic Lab Pocket (Music) -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Sonic Lab // Selected Releases</h2>
+                    <div class="p-6 space-y-8">
+                        <!-- INTEL -->
+                        <div>
+                            <h3 class="font-bold text-xl">INTEL (Inside The Eko Life)</h3>
+                            <p class="text-sm text-neutral-400 mb-3">Album // 2024</p>
+                            <a href="https://open.spotify.com/album/27v0mFXY5hjNEDmc12Oaip" target="_blank" rel="noopener noreferrer" class="link-item inline-flex items-center gap-2 px-3 py-1 rounded-md text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon text-green-500"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                                Stream Now
+                            </a>
+                        </div>
+                        <!-- Body Mind & Soul -->
+                        <div>
+                            <h3 class="font-bold text-xl">Body Mind & Soul</h3>
+                            <p class="text-sm text-neutral-400 mb-3">EP // 2024</p>
+                            <a href="https://open.spotify.com/album/3dDJbaXfHHFndLUOdeJDQA" target="_blank" rel="noopener noreferrer" class="link-item inline-flex items-center gap-2 px-3 py-1 rounded-md text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon text-green-500"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                                Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source Code Pocket (Philosophy) -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Source Code // Philosophy</h2>
+                    <div class="p-6 space-y-4">
+                        <blockquote class="border-l-4 border-brand-cyan pl-4 italic text-neutral-300">
+                            "I've always seen myself as a mirror with cracks. You hold me up to yourself, you see your beauty and your breakdown."
+                        </blockquote>
+                        <blockquote class="border-l-4 border-brand-cyan pl-4 italic text-neutral-300">
+                            "I'm a spiritual man with anger issues. A romantic who doesn't trust love... I let the contradictions live."
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-1 space-y-6">
+                
+                <!-- Visual Data Pocket -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Visual Data</h2>
+                    <div class="p-4 space-y-3">
+                        <a href="https://youtu.be/LX9GEuXQVcA" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Watch: The Invite</a>
+                        <a href="https://youtu.be/rxT8jT0QZGM" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Watch: Reason (ft. Shi Boi)</a>
+                        <a href="https://www.youtube.com/@KrexxNv" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Full YouTube Channel</a>
+                    </div>
+                </div>
+
+                <!-- Signal Boost Pocket -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Signal Boost</h2>
+                     <div class="p-4 space-y-3">
+                        <a href="https://www.instagram.com/krexxnv" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Instagram</a>
+                        <a href="https://tiktok.com/@krexxnv" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">TikTok</a>
+                        <a href="https://en.wikipedia.org/wiki/Krexx_Nv" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Wikipedia</a>
+                        <a href="https://www.vanguardngr.com/2024/08/singer-krexx-nv-sets-new-standard-with-musical-uniqueness/" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Vanguard Feature</a>
+                    </div>
+                </div>
+
+                <!-- Comms Pocket (Contact) -->
+                <div class="pocket rounded-lg">
+                    <h2 class="pocket-title p-4 font-mono text-lg font-bold">Establish Comms</h2>
+                    <div class="p-4 space-y-3">
+                        <a href="mailto:info@krexxnv.com" class="link-item block p-3 rounded-md font-semibold text-sm">Email for Bookings/Press</a>
+                        <a href="https://krexxnv.com" target="_blank" rel="noopener noreferrer" class="link-item block p-3 rounded-md font-semibold text-sm">Official Website</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10">
+            <p class="font-mono text-xs text-neutral-600">DOSSIER END // &copy; <span id="year"></span> NIMBLE NOVA ENT.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
